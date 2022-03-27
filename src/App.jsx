@@ -6,17 +6,16 @@ function App() {
   //React js hook demo
   const [count, setCount] = useState(0);
 
-  useEffect(()=>{
-    console.log("This");
-  console.log("wo");
-  },[]);
+  useEffect(() => {
+    console.log('This');
+    console.log('wo');
+  }, []);
 
-  const caculatedValue = useMemo(()=>{
+  const caculatedValue = useMemo(() => {
     return count + 1;
-  },[count]);
+  }, [count]);
 
   return (
-
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
