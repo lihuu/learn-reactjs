@@ -1,14 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import { useEffect, useMemo, useState } from 'react';
+import logo from "./logo.svg";
+import "./App.css";
+import { useEffect, useMemo, useState } from "react";
+import CharactorCounter from "./TextInput";
+import "./obserable";
 
 function App() {
   //React js hook demo
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    console.log('This');
-    console.log('wo');
+    //console.log("This");
+    //console.log("wo");
   }, []);
 
   const caculatedValue = useMemo(() => {
@@ -26,6 +28,7 @@ function App() {
         <button href="javascript:void(0)" onClick={() => setCount(count + 1)}>
           Add count
         </button>
+        <CharactorCounter />{" "}
       </header>
     </div>
   );
